@@ -59,7 +59,8 @@ function App() {
         href="mailto:stevenwbulljr@gmail.com" 
         target="_blank" rel="noopener noreferrer">Email</a> | <a href="https://github.com/StevenWBull" 
         target="_blank" rel="noopener noreferrer">GitHub</a> | <a href="https://www.linkedin.com/in/stevenwbull/" 
-        target="_blank" rel="noopener noreferrer">LinkedIn</a></footer>
+        target="_blank" rel="noopener noreferrer">LinkedIn</a>
+      </footer>
     </>
   );
 }
