@@ -40,10 +40,6 @@ a {
   text-decoration: none;
 }
 
-/* a:visited {
-  color: purple;
-} */
-
 a:hover {
   text-decoration: underline;
   cursor: pointer;
@@ -100,8 +96,9 @@ button {
     width: 400px;
   }
 
-  footer {
-    margin-top: 2%;
-    padding-top: 1%;
+  button {
+    width: 30%;
+    margin: 0.3%;
   }
+
 }

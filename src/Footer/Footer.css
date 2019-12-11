@@ -23,4 +23,10 @@ ion-icon {
   color: black;
   cursor: pointer;
   margin: 0% 2%;
-} 
+}
+
+@media screen and (min-width: 1024px) {
+  ion-icon {
+    margin: 0% 0.5%;
+  }
+}
