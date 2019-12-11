@@ -1,17 +1,21 @@
-import React from 'react';
+import React, { useState } from 'react';
 import './Accordion.css';
 
-export default Accordion(props) {
+export default function Accordion({ component, ...props }) {
+  const [ setActive, setActiveState ] = useState('');
+
+  const toggleAccordion = () => {
+    setActiveState(setActive === '' ? 'active' : '')
+  }
+  
+  const Component = component
   return (
     <div className='accordion__section'>
       <button className='accordion'>
-        <p className='accordion__title'>{props.title}</p>
+        <h3 className='accordion__title'>{props.title}</h3>
       </button>
       <div className='accordion__content'>
-        <div 
-          className='accordion__text'
-          dangerouslySetInnerHTML={{ __html: props.content }}
-        />
+        <Component />
       </div>
     </div>
   )

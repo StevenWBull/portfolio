@@ -3,7 +3,7 @@ import React from 'react';
 export default function AboutMe() {
   return (
     <section>
-      <h3>About Me</h3>
+      {/* <h3>About Me</h3> */}
       <div className="aboutMe">
         <p>
           I am a current apprentice for Thinkful in the Engineering Immersion program.
