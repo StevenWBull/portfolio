@@ -1,21 +1,27 @@
-import React, { useState } from 'react';
+import React, { useState, useRef } from 'react';
 import './Accordion.css';
 
 export default function Accordion({ component, ...props }) {
   const [ setActive, setActiveState ] = useState('');
+  const [ setHeight, setActiveHeight ] = useState('0px')
 
+  const content = useRef(null)
   const toggleAccordion = () => {
     setActiveState(setActive === '' ? 'active' : '')
+    setActiveHeight(
+      setActive === "active" ? "0px" : `${content.current.scrollHeight}px`
+    );
   }
-
+  
   const Component = component
   return (
     <div className='accordion__section'>
       <button className='accordion' onClick={toggleAccordion}>
         <h3 className='accordion__title'>{props.title}</h3>
       </button>
-      <div className='accordion__content'>
-        {setActive ? <Component /> : null}
+
+      <div className='accordion__content' ref={content} style={{ maxHeight: `${setHeight}` }}>
+        <Component />
       </div>
     </div>
   )

@@ -15,8 +15,8 @@ function App() {
       <main>
         <Header />
         <Accordion title='About Me' component={AboutMe} />
-        <Skills />
-        <Projects />
+        <Accordion title='Skills' component={Skills} />
+        <Accordion title='Projects' component={Projects} />
         <Footer />
       </main>
     </>

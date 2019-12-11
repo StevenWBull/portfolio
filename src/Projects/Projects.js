@@ -3,7 +3,6 @@ import React from 'react';
 export default function Projects()  {
   return (
     <section className="projects">
-      <h3>Projects</h3>
       <div>
         <img src="chemistryKnowledgeQuiz-compressed.png" alt="Chemistry Knowledge Quiz App" />
         <h4>The Chemistry Knowledge Quiz </h4>
