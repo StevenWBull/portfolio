@@ -7,15 +7,15 @@ export default function Accordion({ component, ...props }) {
   const toggleAccordion = () => {
     setActiveState(setActive === '' ? 'active' : '')
   }
-  
+
   const Component = component
   return (
     <div className='accordion__section'>
-      <button className='accordion'>
+      <button className='accordion' onClick={toggleAccordion}>
         <h3 className='accordion__title'>{props.title}</h3>
       </button>
       <div className='accordion__content'>
-        <Component />
+        {setActive ? <Component /> : null}
       </div>
     </div>
   )
