@@ -104,5 +104,10 @@ button {
     width: 50%;
     margin: auto;
   }
+}
 
+@media screen and (min-width: 1400px) {
+  body {
+    min-height: 97vh;
+  }
 }
