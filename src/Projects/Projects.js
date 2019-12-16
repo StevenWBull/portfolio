@@ -4,10 +4,11 @@ export default function Projects()  {
   return (
     <section className="projects">
       <div>
+      <img src='BreadCrumbs-Home-compressed.jpg' alt='BreadCrumbs' />
         <h4>BreadCrumbs</h4>
         <p><a href='https://github.com/thinkful-ei-gecko/BreadCrumbs-Client'>GitHub</a> | <a href='https://breadcrumbs.now.sh/'>Live</a></p>
         <p><em>Engineered with HTML, CSS, JSX, JavaScript, React, Context, Node, Express, Third-Party API, & PostgreSQL</em></p>
-        <p></p>
+        <p>Breadcrumbs is a reenvisioned news aggregator that eliminates "gatekeepers" and the inevitable partisanship found on older platforms that rely on editors and manual aggregation. By empowering our users to anonymously determine an article's value, we have created a decentralized auditing system over which the users have total control. This decentralized system will affect the visibility of each automatically submitted article, with more valuable articles rising to the top of the user's feed. Every 15 minutes Breadcrumbs will feed fresh news from over 30,000 unique online publishers for its users to read, evaluate, archive, and publicly discuss.</p>
       </div>
       <div>
         <h4>Minionese Learning App</h4>
@@ -16,6 +17,7 @@ export default function Projects()  {
         <p>The minionese learning app is a project created by Steven Bull and Brock Boutwell. The project centers around the learning of the coveted 'banana language' of the minions. The server uses a special algorithm in order to increase the retention and learning execution of users. If an answer is incorrect the word gets moved to the next word, however if it is correct, the word gets pushed back x amount of spaces. This ensures that before moving on to new and exciting lexicons, the words are committed to memory through repetition.</p>
       </div>
       <div>
+        <img src='Restaurant-Roulette-compressed.jpg' alt='Restaurant Roulette' />
         <h4>Restaurant Roulette</h4>
         <p><a href='https://github.com/StevenWBull/restaurant-roulette-client'>GitHub</a> | <a href='https://restaurant-roulette.now.sh/'>Live</a></p>
         <p><em>Engineered with HTML, CSS, JSX, JavaScript, React, Context, React Hooks, Node, Express, & PostgreSQL</em></p>
