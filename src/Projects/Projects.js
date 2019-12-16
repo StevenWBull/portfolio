@@ -5,12 +5,14 @@ export default function Projects()  {
     <section className="projects">
       <div>
         <h4>BreadCrumbs</h4>
+        <p><a href='https://github.com/thinkful-ei-gecko/BreadCrumbs-Client'>GitHub</a> | <a href='https://breadcrumbs.now.sh/'>Live</a></p>
+        <p><em>Engineered with HTML, CSS, JSX, JavaScript, React, Context, Node, Express, Third-Party API, & PostgreSQL</em></p>
         <p></p>
       </div>
       <div>
         <h4>Minionese Learning App</h4>
         <p><a href='https://github.com/StevenWBull/minionese-learning-client'>GitHub</a> | <a href='https://minionese-app.now.sh'>Live</a></p>
-        <p><em>Engineered with HTML, CSS, JSX, JavaScript, React, Context, Node, Express, Spaced Repetition Algorithm & PostgreSQL</em></p>
+        <p><em>Engineered with HTML, CSS, JSX, JavaScript, React, Context, Node, Express, Spaced Repetition Algorithm, & PostgreSQL</em></p>
         <p>The minionese learning app is a project created by Steven Bull and Brock Boutwell. The project centers around the learning of the coveted 'banana language' of the minions. The server uses a special algorithm in order to increase the retention and learning execution of users. If an answer is incorrect the word gets moved to the next word, however if it is correct, the word gets pushed back x amount of spaces. This ensures that before moving on to new and exciting lexicons, the words are committed to memory through repetition.</p>
       </div>
       <div>
