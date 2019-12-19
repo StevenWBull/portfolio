@@ -17,7 +17,7 @@ export default function Accordion({ component, ...props }) {
   return (
     <div className='accordion__section'>
       <button className='accordion' onClick={toggleAccordion}>
-        <h3 className='accordion__title'>{props.title}</h3>
+        {props.title}
       </button>
 
       <div className='accordion__content' ref={content} style={{ maxHeight: `${setHeight}` }}>
