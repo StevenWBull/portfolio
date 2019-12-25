@@ -6,7 +6,7 @@ export default function AboutMe() {
       {/* <h3>About Me</h3> */}
       <div className="aboutMe">
         <p>
-          I am a current apprentice for Thinkful in the Engineering Immersion program.
+          I am graduate of Thinkful's Engineering Immersion program and a current Full Stack Developer for Dixon Technologies.
           I love the smell of strong coffee in front of a computer monitor in the morning,
           and I love solving problems and squashing bugs even more.
           The endorphin rush I experience whenever I finally publish a project can rival any adrenaline junkie’s high.

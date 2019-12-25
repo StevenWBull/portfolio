@@ -6,7 +6,7 @@ export default function Header() {
       <p>Hello, my name is</p>
       <h1>Steven</h1>
       <p>and I'm a chemist turned</p>
-      <h2>Full-Stack Engineer</h2>
+      <h2>Full Stack Developer</h2>
     </header>
   )
 }
