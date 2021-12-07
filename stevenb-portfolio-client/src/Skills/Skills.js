@@ -10,7 +10,7 @@ export default function Skills() {
       </div>
       <div className='skill-div'>
         <h4>Back-End</h4>
-        <p>Node | Express | Knex | SQL | PostgreSQL | Python | Mocha | Chai | Supertest | RESTful API</p>
+        <p>Node | Express | Knex | SQL | PostgreSQL | Python | Flask | Mocha | Chai | Supertest | RESTful API</p>
       </div>
       <div className='skill-div'>
         <h4>Additional Tools</h4>
