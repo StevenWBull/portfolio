@@ -6,7 +6,7 @@ import AboutMe from '../AboutMe/AboutMe';
 import Skills from '../Skills/Skills';
 import Projects from '../Projects/Projects';
 import Accordion from '../Accordion/Accordion';
-import MaintenancePage from '../MaintenancePage/MaintenancePage';
+import MaintenancePage from '../../AnaBabyShowerWebsite/MaintenancePage/MaintenancePage';
 import './App.css';
 
 function App() {

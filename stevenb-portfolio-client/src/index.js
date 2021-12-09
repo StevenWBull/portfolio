@@ -1,9 +1,14 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
+import { BrowserRouter } from 'react-router-dom'
 import './index.css';
-import App from './App/App';
+// Portfolio View
+// import App from './PortfolioWebsite/App/App';
+import App from './AnaBabyShowerWebsite/App/App';
 
 ReactDOM.render(
-  <App />, 
+  <BrowserRouter >
+    <App />
+  </BrowserRouter>, 
   document.getElementById('root')
 );
