@@ -4,6 +4,12 @@ footer {
   position: absolute;
   bottom: 0;
   border-top: 2px outset black;
+
+  /* Baby shower style */
+  font-size: 13px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .footerContainer > p {

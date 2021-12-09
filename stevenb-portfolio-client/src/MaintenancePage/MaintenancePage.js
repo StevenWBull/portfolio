@@ -1,4 +1,5 @@
 import React from 'react';
+import './MaintenancePage.css';
 
 export default function MaintenancePage() {
   return (
