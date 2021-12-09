@@ -4,6 +4,9 @@ const morgan = require('morgan')
 const cors = require('cors')
 const helmet = require('helmet')
 
+const rsvpRouter = require("./rsvp/rsvp-router");
+const noteRouter = require("./note/note-router");
+
 const app = express()
 
 const morganOption = (process.env.NODE_ENV === 'production')
@@ -14,7 +17,8 @@ app.use(morgan(morganOption))
 app.use(helmet())
 app.use(cors())
 
-app.use()
+app.use('/api/rsvp', rsvpRouter);
+app.use('/api/note', noteRouter);
 
 app.get('/', (req, res) => {
     res.send('Hello, world!')
