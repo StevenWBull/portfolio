@@ -6,7 +6,6 @@ import AboutMe from '../AboutMe/AboutMe';
 import Skills from '../Skills/Skills';
 import Projects from '../Projects/Projects';
 import Accordion from '../Accordion/Accordion';
-import MaintenancePage from '../../AnaBabyShowerWebsite/MaintenancePage/MaintenancePage';
 import './App.css';
 
 function App() {
@@ -14,11 +13,10 @@ function App() {
     <>
     <Nav />
       <main>
-        <MaintenancePage />
-        {/* <Header />
+        <Header />
         <Accordion title='About Me' component={AboutMe} />
         <Accordion title='Skills' component={Skills} />
-        <Accordion title='Projects' component={Projects} /> */}
+        <Accordion title='Projects' component={Projects} />
         <Footer />
       </main>
     </>
