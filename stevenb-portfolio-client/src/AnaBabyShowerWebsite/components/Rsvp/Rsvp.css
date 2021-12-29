@@ -1,6 +1,5 @@
 .main {
     background-color: #FFFFFF;
-    width: 400px;
     margin: inherit auto;
     border-radius: 1.5em;
     box-shadow: 0px 11px 35px 2px rgba(0, 0, 0, 0.14);
@@ -8,8 +7,12 @@
     text-align: center;
 }
 
+p {
+    line-height: 0.5em;
+}
+
 .sign {
-    padding-top: 30px;
+    padding-top: 10px;
     color: #a3bbcf;
     font-family: 'Ubuntu', sans-serif;
     font-weight: bold;
@@ -110,10 +113,42 @@ a {
     text-align: center;
     padding-bottom: 20px;
 }
-    
-@media (max-width: 500px) {
+
+@media only screen and (min-width: 600px) {
+    .un {
+        width: 70%;
+    }
+    #demo-submit {
+        width: 70%;
+    }
+}
+
+@media only screen and (min-width: 1000px) {
     .main {
-        width: 90%;
-        margin: 1em auto;
+        display: flex;
+        flex-direction: column;
+        width: 70%;
+        margin-top: 100px;
+    }
+    .section-cont {
+        display: flex;
+    }
+
+    .section-cont > div, form {
+        width: 50%;
+    }
+    .info-div {
+        padding: 0 0 100px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+    .un {
+        width: 100%;
+    }
+
+    #demo-submit {
+        width: 100%;
     }
 }
