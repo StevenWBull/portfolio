@@ -15,7 +15,7 @@ rsvpRouter
               service: 'gmail',
               auth: {
                 user: 'stevin.bull@gmail.com',
-                pass: GMAIL_PASS
+                pass: process.env.GMAIL_PASS
               }
             });
             
