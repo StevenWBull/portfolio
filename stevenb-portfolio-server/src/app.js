@@ -5,7 +5,7 @@ const cors = require('cors');
 const helmet = require('helmet');
 
 const rsvpRouter = require("./rsvp/rsvp-router");
-const noteRouter = require("./note/note-router");
+const noteRouter = require("./notes/note-router");
 
 const app = express();
 
