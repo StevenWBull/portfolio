@@ -18,7 +18,7 @@ app.use(helmet());
 app.use(cors());
 
 app.use('/api/rsvp', rsvpRouter);
-app.use('/api/note', noteRouter);
+// app.use('/api/note', noteRouter);
 
 app.get('/', (req, res) => {
     res.send('Hello, world!')
