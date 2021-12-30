@@ -28,9 +28,11 @@ rsvpRouter
             
             transporter.sendMail(mailOptions, function(error, info) {
               if (error) {
-                console.error(error);
+                    console.error(error);
+                    return res.status(400).json({ message: error.message })
               } else {
-                console.log('Email sent: ' + info.response);
+                    console.log('Email sent: ' + info.response);
+                    return res.status(201).json({ message: 'success' })
               }
             });
         } catch (e) {

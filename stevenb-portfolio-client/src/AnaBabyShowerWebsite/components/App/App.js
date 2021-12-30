@@ -15,18 +15,29 @@ const App = () => {
   const navigate = useNavigate();
   const [rsvpInfo, setRsvpInfo] = useState({});
   const [attendStatus, setAttendStatus] = useState('');
+  const [loader, setLoader] = useState(false);
 
   const onRsvpInfoChange = (name, value) => {
     return setRsvpInfo(prevRsvpInfo => ({ ...prevRsvpInfo, [name]: value }));
   }
 
   const onSubmitSaveForm = () => {
+    setLoader(true);
     return RsvpApiService.postRsvp(rsvpInfo).then(() => {
+      setLoader(false);
       swal({
         title: "Success!",
         text: "Your RSVP has been saved successfully!",
         icon: "success",
-      }).then(() => clearForm());
+      })
+      .then(() => clearForm())
+    }).catch((e) => {
+      setLoader(false);
+      swal({
+        title: "Error!",
+        text: "There has been an error saving your RSVP, please try again later or email stevin.bull@gmail.com!",
+        icon: "error",
+      });
     })
   }
 
@@ -44,6 +55,7 @@ const App = () => {
     <>
       <Nav />
         <main style={{"background": "transparent"}}>
+          {loader && <div class="spinner1"></div>}
           <Routes>
             <Route exact path={'/'} element={<Home onRsvpSelection={onRsvpSelection} />} />
             <Route exact path={'/rsvp'} element={<Rsvp onRsvpInfoChange={onRsvpInfoChange} onSubmitSaveForm={onSubmitSaveForm} attendStatus={attendStatus} />} />
