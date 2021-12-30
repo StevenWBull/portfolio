@@ -5,4 +5,5 @@ module.exports = {
       || 'postgresql://dunder_mifflin@localhost/breadcrumbs',
     JWT_SECRET: process.env.JWT_SECRET || 'breadcrumbs-secret',
     JWT_EXPIRY: process.env.JWT_EXPIRY || '3h',
+    GMAIL_PASS: process.env.GMAIL_PASS
   }
