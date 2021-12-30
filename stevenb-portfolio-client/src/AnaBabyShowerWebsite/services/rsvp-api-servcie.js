@@ -4,7 +4,6 @@ import swal from 'sweetalert';
 const RsvpApiService = {
     postRsvp(rsvpObj) {
         const rsvpJson = JSON.stringify(rsvpObj);
-        console.log(rsvpJson)
         return fetch(`${config.API_ENDPOINT}/api/rsvp`, {
             method: 'POST',
             headers: { 'content-type': 'application/json' },
