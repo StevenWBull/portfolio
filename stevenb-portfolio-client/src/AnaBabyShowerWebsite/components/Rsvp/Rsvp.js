@@ -34,7 +34,7 @@ const Rsvp = (props) => {
                         <input onChange={handleInputChange} className="un" type="number" placeholder="# of Attendees" name="numOfAttendees" required/>
                         <input onChange={handleInputChange} className="un demoCellNum" type="text" placeholder="Cell Phone" name="cellPhone" pattern="\d*" required/>
                         <input onChange={handleInputChange} className="un" type="text"  placeholder="Email" name="email" required/>
-                        <select onChange={handleInputChange} className="un dmsDD" name="attendingVia" defaultValue="" required>
+                        <select onChange={handleInputChange} className="un dmsDD" name="attendingVia" defaultValue={props.attendStatus} required>
                             <option value="" disabled>I will attend...</option>
                             <option value="in person">In Person</option>
                             <option value="virtually">Virtually</option>
