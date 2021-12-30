@@ -14,10 +14,6 @@
     "morgan": "^1.10.0",
     "nodemon": "^2.0.15"
   },
-  "engines": {
-    "node": ">= 6.9.4",
-    "npm": ">= 4.4.0"
-  },
   "scripts": {
     "dev": "nodemon src/server.js",
     "migrate": "postgrator --config postgrator-config.js",
