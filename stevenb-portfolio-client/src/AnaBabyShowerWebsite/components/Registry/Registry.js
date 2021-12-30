@@ -1,7 +1,7 @@
 import React from 'react';
 import './Registry.css';
 
-const Registry = (props) => {
+const Registry = () => {
     const urlArr = [
         'https://www.target.com/gift-registry/gift/stevenandana2022', 
         'https://www.amazon.com/baby-reg/steven-bull-april-2022-hockley/2I86DMLZA39OP', 

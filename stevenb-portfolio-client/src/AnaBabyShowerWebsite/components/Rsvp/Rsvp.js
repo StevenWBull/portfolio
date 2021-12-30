@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React, { useEffect } from 'react';
 import './Rsvp.css';
 
 const Rsvp = (props) => {
@@ -6,6 +6,10 @@ const Rsvp = (props) => {
         e.preventDefault();
         return props.onSubmitSaveForm();
     }
+
+    useEffect(() => {
+        return props.onRsvpInfoChange('attendingVia', props.attendStatus);
+    }, [])
 
     const handleInputChange = ({ target }) => {
         const { name, value } = target;

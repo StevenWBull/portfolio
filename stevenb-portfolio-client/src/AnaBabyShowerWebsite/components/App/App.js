@@ -9,6 +9,7 @@ import NotFoundPage from '../../routes/NotFoundPage/NotFoundPage';
 import RsvpApiService from '../../services/rsvp-api-servcie';
 import './App.css';
 import Registry from '../Registry/Registry';
+import swal from 'sweetalert';
 
 const App = () => {
   const navigate = useNavigate();
@@ -20,7 +21,18 @@ const App = () => {
   }
 
   const onSubmitSaveForm = () => {
-    return RsvpApiService.postRsvp(rsvpInfo)
+    return RsvpApiService.postRsvp(rsvpInfo).then(() => {
+      swal({
+        title: "Success!",
+        text: "Your RSVP has been saved successfully!",
+        icon: "success",
+      }).then(() => clearForm());
+    })
+  }
+
+  const clearForm = () => {
+    setRsvpInfo({});
+    navigate('/');
   }
 
   const onRsvpSelection = (selection) => {
