@@ -6,6 +6,7 @@ import MaintenancePage from '../MaintenancePage/MaintenancePage';
 import Home from '../Home/Home';
 import Rsvp from '../Rsvp/Rsvp';
 import NotFoundPage from '../../routes/NotFoundPage/NotFoundPage';
+import RsvpApiService from '../../services/rsvp-api-servcie';
 import './App.css';
 
 const App = () => {
@@ -16,7 +17,7 @@ const App = () => {
   }
 
   const onSubmitSaveForm = () => {
-    console.log(rsvpInfo)
+    return RsvpApiService.postRsvp(rsvpInfo)
   }
 
   return (
