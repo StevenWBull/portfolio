@@ -1,4 +1,5 @@
 import config from '../../config';
+import swal from 'sweetalert';
 
 const RsvpApiService = {
     postRsvp(rsvpObj) {
@@ -14,7 +15,11 @@ const RsvpApiService = {
               : res.json()
           )
           .catch(error=>{
-            console.error({error})
+            swal({
+                title: "Error!",
+                text: "There has been an error saving your RSVP, please try again later or email stevin.bull@gmail.com!",
+                icon: "error",
+              });
           })
     }
 }

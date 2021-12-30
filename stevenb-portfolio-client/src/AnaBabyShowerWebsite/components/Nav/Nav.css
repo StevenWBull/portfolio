@@ -9,6 +9,10 @@
 }
 
 @media only screen and (min-width: 1000px) {
+    .user__logout {
+        display: none;
+    }
+    
     .route-cont {
         display: flex;
         width: 30%;
