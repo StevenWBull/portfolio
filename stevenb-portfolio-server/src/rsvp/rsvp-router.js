@@ -11,20 +11,16 @@ rsvpRouter
     .route('/')
     .post(jsonBodyParser, (req, res) => {
         try {
-            let testAccount = await nodemailer.createTestAccount();
-
             const transporter = nodemailer.createTransport({
-                    host: "smtp.ethereal.email",
-                    port: 587,
-                    secure: false, // true for 465, false for other ports
-                    auth: {
-                    user: testAccount.user, // generated ethereal user
-                    pass: testAccount.pass, // generated ethereal password
-                },
+              service: 'yahoo',
+              auth: {
+                user: 'stevenbull.noreply@yahoo.com',
+                pass: process.env.GMAIL_PASS
+              }
             });
             
             const mailOptions = {
-              from: 'stevenbull-noreply@example.com',
+              from: 'stevenbull.noreply@yahoo.com',
               to: 'stevin.bull@gmail.com',
               subject: 'RSVP ANA BABY SHOWER',
               text: JSON.stringify(req.body, null, 4)
