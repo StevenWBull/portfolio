@@ -1,0 +1,25 @@
+.nav-cont, .route-cont {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.route-cont {
+    display: none;
+}
+
+@media only screen and (min-width: 1000px) {
+    .route-cont {
+        display: flex;
+        width: 30%;
+    }
+
+    .route-cont > span {
+        cursor: pointer;
+    }
+
+    .route-cont > span:hover {
+        cursor: pointer;
+        color: lightgray;
+    }
+}
