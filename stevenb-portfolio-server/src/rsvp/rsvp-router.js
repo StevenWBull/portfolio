@@ -21,8 +21,8 @@ rsvpRouter
             
             const mailOptions = {
               from: 'stevenbull.noreply@yahoo.com',
-              to: 'stevin.bull@gmail.com',
-              subject: 'RSVP ANA BABY SHOWER',
+              to: 'stevin.bull@gmail.com,mustangkay1@yahoo.com',
+              subject: 'RSVP - ANA BABY SHOWER',
               text: JSON.stringify(req.body, null, 4)
             };
             
