@@ -15,13 +15,13 @@ export default class Home extends Component {
                 </div>
                 <div className="rsvp-btn-container">
                     <div>
-                        <span>Join us in Person!</span>
-                        <button className="btn btn-primary">RSVP for in Person</button>
+                        <span>Join us in Person!</span><br/>
+                        <button className="btn btn-primary join-us">RSVP for in Person</button>
                     </div>
-                    <h4>OR</h4>
+                    <h4 className='h4'>OR</h4>
                     <div>
-                        <span>Join us Virtually!</span>
-                        <button className="btn btn-primary">RSVP for Virtual</button>
+                        <span>Join us Virtually!</span><br/>
+                        <button className="btn btn-primary join-us">RSVP for Virtual</button>
                     </div>
                 </div>
             </div>
