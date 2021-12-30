@@ -1,0 +1,118 @@
+#home-cont-section {
+    background: transparent !important;
+    z-index: 4;
+    padding-top: 7em;
+}
+
+.h4 {
+    margin:15px;
+}
+
+.join-us{
+    margin-top:10px;
+}
+
+.Home-container, .rsvp-btn-container {
+    padding: 6% 4%;
+    text-align: center;
+    /* border: black 1px solid; */
+    background-color: rgba(0, 0, 0, 0.4);
+    border-radius: 15px;
+}
+
+.btn-primary {
+    background-color: #1EAEDB !important;
+    border: 1px solid #1590b7 !important;
+}
+
+.btn {
+    display: inline-block;
+    margin-bottom: 0;
+    font-weight: 400;
+    text-align: center;
+    vertical-align: middle;
+    cursor: pointer;
+    background-image: none;
+    border: 1px solid transparent;
+    white-space: nowrap;
+    padding: 6px 12px;
+    font-size: 14px;
+    line-height: 1.42857143;
+    border-radius: 20px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+img.bg {
+    /* Set rules to fill background */
+    min-height: 100%;
+    max-height: 100%;
+      
+    /* Set up proportionate scaling */
+    width: 100%;
+    height: auto;
+      
+    /* Set up positioning */
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+
+.home-text-cont {
+    padding: 0;
+    color: #FFFFFF;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 550px;
+}
+
+@media only screen and (min-width: 700px) {
+    #home-cont-section {
+        padding-top: 100px;
+        height: 90vh;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+    }
+
+    img.bg {
+        /* Set rules to fill background */
+        min-height: 100%;
+        max-height: 100%;
+          
+        /* Set up proportionate scaling */
+        width: 50%;
+        height: auto;
+          
+        /* Set up positioning */
+        position: static;
+        max-width: 550px;
+        box-shadow: 0px 11px 35px 2px rgba(0, 0, 0, 0.14);
+    }
+
+    .home-text-cont {
+        padding: 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        height: 100%;
+        width: 33%;
+    }
+
+    .Home-container, .rsvp-btn-container {
+        padding: 6% 4%;
+        text-align: center;
+        /* border: black 1px solid; */
+        background-color: rgba(0, 0, 0);
+        border-radius: 15px;
+        box-shadow: 0px 11px 35px 2px rgba(0, 0, 0, 0.14);
+    }
+
+    .join-us {
+        width: 55%;
+    }
+}

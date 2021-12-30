@@ -1,13 +1,20 @@
 const express = require("express");
+const bodyParser = require('body-parser');
+const fs = require('fs');
 
 const rsvpRouter = express.Router();
-const jsonBodyParser = express.json();
+const jsonBodyParser = bodyParser.json();
 
-rsvpRouter.use('/')
-    .get(jsonBodyParser, (req, res, next) => {
-        let success = 'Success with getting rsvp!'
-
-        res.status(200).json(success);
+rsvpRouter
+    .route('/')
+    .post(jsonBodyParser, (req, res) => {
+        try {
+            let data = JSON.stringify(req.body, null, 2);
+            fs.writeFileSync('./rsvp.json', data);
+            return res.status(201).json({ message: 'success' });
+        } catch (e) {
+            return res.status(400).json({ message: e.message })
+        }
     })
 
 module.exports = rsvpRouter;
