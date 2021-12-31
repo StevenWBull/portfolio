@@ -47,7 +47,7 @@ const Rsvp = (props) => {
                             <option value="virtually">Virtually</option>
                         </select>
                         <div className="submit-btn-cont">
-                            <button id="demo-submit" className="submit" type="submit">Submit!</button>
+                            <button id="demo-submit" className="submit" type="submit">Submit!</button><br/>
                             {(props.attendStatus === 'virtually' || selectVal === 'virtually') && <span className="virtual-disclaimer">*You will receive a virtual link via email closer to the shower!</span>}
                         </div>
                     </form>
