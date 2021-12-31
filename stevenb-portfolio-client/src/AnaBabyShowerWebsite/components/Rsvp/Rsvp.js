@@ -1,7 +1,8 @@
-import React, { useEffect } from 'react';
+import React, { useEffect, useState } from 'react';
 import './Rsvp.css';
 
 const Rsvp = (props) => {
+    const [selectVal, setSelectVal] = useState('');
     const handleFormSubmit = (e) => {
         e.preventDefault();
         return props.onSubmitSaveForm();
@@ -13,6 +14,8 @@ const Rsvp = (props) => {
 
     const handleInputChange = ({ target }) => {
         const { name, value } = target;
+        if (name === 'attendingVia')
+            setSelectVal(value);
         return props.onRsvpInfoChange(name, value);
     }
 
@@ -46,6 +49,7 @@ const Rsvp = (props) => {
                         <div className="submit-btn-cont">
                             <button id="demo-submit" className="submit" type="submit">Submit!</button>
                         </div>
+                        {(props.attendStatus === 'virtually' || selectVal === 'virtually') && <span className="virtual-disclaimer">*You will receive a virtual link via email closer to the shower!</span>}
                     </form>
                 </div>
             </div>

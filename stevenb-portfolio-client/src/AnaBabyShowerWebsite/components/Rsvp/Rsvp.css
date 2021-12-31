@@ -114,6 +114,10 @@ a {
     padding-bottom: 20px;
 }
 
+.virtual-disclaimer {
+    font-size: 10px;
+}
+
 @media only screen and (min-width: 600px) {
     .un {
         width: 70%;
